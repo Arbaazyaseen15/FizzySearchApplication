@@ -7,7 +7,7 @@ This documentation provides details on how to use the Fuzzy Search REST API to s
 ## API Endpoint
 
 ```
-GET /api/food/search
+GET https://api-url.com/search?query=<string>
 ```
 
 ## Parameters
@@ -16,12 +16,12 @@ GET /api/food/search
 
 ## Example Usage
 
-Assuming the API is deployed at `https://your-api-url.com`:
+Assuming the API is deployed at `https://api-url.com`:
 
 ### Request
 
 ```
-GET https://your-api-url.com/api/food/search?query=Pizza
+GET https://api-url.com/search?query=Pizza
 ```
 
 ### Response
@@ -32,14 +32,12 @@ GET https://your-api-url.com/api/food/search?query=Pizza
     {
       "id": "1",
       "name": "Domino's Cheese Pizza",
-      "description": "Delicious cheese pizza from Domino's.",
-      "price": 10.99
+      "description": "Delicious cheese pizza from Domino's."
     },
     {
       "id": "2",
       "name": "Pepperoni Pizza",
-      "description": "Classic pepperoni pizza with tomato sauce and cheese.",
-      "price": 12.99
+      "description": "Classic pepperoni pizza with tomato sauce and cheese."
     }
     // Other matching results...
   ]
@@ -53,7 +51,7 @@ GET https://your-api-url.com/api/food/search?query=Pizza
 #### Request
 
 ```
-GET https://your-api-url.com/api/food/search?query=Cheeseburger
+GET https://api-url.com/search?query=Cheeseburger
 ```
 
 #### Response
@@ -64,8 +62,7 @@ GET https://your-api-url.com/api/food/search?query=Cheeseburger
     {
       "id": "5",
       "name": "Classic Cheeseburger",
-      "description": "Juicy beef patty with cheese, lettuce, and tomato.",
-      "price": 8.99
+      "description": "Juicy beef patty with cheese, lettuce, and tomato."
     }
     // Other matching results...
   ]
@@ -77,7 +74,7 @@ GET https://your-api-url.com/api/food/search?query=Cheeseburger
 #### Request
 
 ```
-GET https://your-api-url.com/api/food/search?query=Fries
+GET https://api-url.com/search?query=Fries
 ```
 
 #### Response
@@ -88,8 +85,7 @@ GET https://your-api-url.com/api/food/search?query=Fries
     {
       "id": "7",
       "name": "Crispy French Fries",
-      "description": "Golden-brown and crispy potato fries.",
-      "price": 3.99
+      "description": "Golden-brown and crispy potato fries."
     }
     // Other matching results...
   ]
@@ -100,7 +96,5 @@ GET https://your-api-url.com/api/food/search?query=Fries
 
 - The API is designed to provide search results that match the search query with small spelling mistakes and in any order of words.
 - The `results` array in the response contains a list of food items that match the search query.
-- Each food item in the `results` array includes the `id`, `name`, `description`, and `price` attributes.
+- Each food item in the `results` array includes the `id` and `name` attributes.
 ```
-
-You can save this content into a `.md` file using a text editor, and then you can render it as formatted documentation in Markdown-supporting platforms like GitHub or other documentation tools.
