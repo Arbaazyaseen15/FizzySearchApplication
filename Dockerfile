@@ -1,5 +1,5 @@
-# Use an official OpenJDK image as the base image
-FROM openjdk:11-jre-slim
+# Use an official OpenJDK 17 image as the base image
+FROM adoptopenjdk/openjdk17:alpine-jre
 
 # Set the working directory inside the container
 WORKDIR /app
