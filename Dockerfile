@@ -1,5 +1,5 @@
 # Use an official OpenJDK 17 image as the base image
-FROM adoptopenjdk/openjdk17:alpine-jre
+FROM openjdk:17-oracle
 
 # Set the working directory inside the container
 WORKDIR /app
