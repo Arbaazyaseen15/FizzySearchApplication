@@ -1,0 +1,5 @@
+com\mongodb\fizzysearch\fizzysearch\FizzySearchApplication.class
+com\mongodb\fizzysearch\fizzysearch\model\FoodItem.class
+com\mongodb\fizzysearch\fizzysearch\repository\FoodItemRepository.class
+com\mongodb\fizzysearch\fizzysearch\service\FoodItemService.class
+com\mongodb\fizzysearch\fizzysearch\controller\FoodItemController.class
